@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EM Store</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+<nav class="navbar">
+
+        <!-- Menu Button -->
+        <button id="menuBtn" class="nav-btn">
+            ☰
+        </button>
+
+        <!-- EM Logo -->
+        <div class="logo">
+            <span>EM</span>
+        </div>
+
+        <!-- Admin Button -->
+        <button id="adminBtn" class="nav-btn">
+            ⚙
+        </button>
+  <!-- Side Menu -->
+
+
+
+
+</nav>
+    </header>
+<div id="menuOverlay" class="menu-overlay" onclick="closeMenu()"></div>
+
+<div id="sideMenu">
+
+    <h2>EM STORE</h2>
+
+
+    <button onclick="aboutUs()">
+        ℹ️ About
+    </button>
+
+    <button onclick="showProducts()">
+        🏏 Products
+    </button>
+
+    <button onclick="contactUs()">
+        📞 Contact Us
+    </button>
+
+    <button onclick="openInstagram()">
+        📸 Instagram
+    </button>
+
+    <button onclick="openYoutube()">
+        ▶️ YouTube
+    </button>
+  <div class="menu-header">
+
+    
+
+    <button id="closeMenuBtn" onclick="closeMenu()">
+        ✕
+    </button>
+
+  </div>
+</div>
+  
+
+    <!-- ================= HERO SLIDER ================= -->
+
+<section class="hero-section">
+
+    <div class="swiper heroSwiper">
+
+        <div class="swiper-wrapper" id="sliderWrapper">
+
+            <!-- Backend se slider images yahan load hongi -->
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+    <!-- Categories -->
+    <section id="categories">
+
+    </section>
+
+    <!-- Products -->
+    <!-- =========================================
+             PRODUCTS SECTION
+========================================= -->
+
+<section id="products">
+
+    <!-- Cricket Bat -->
+
+    <section class="category-section" id="Cricketbat">
+
+        <div class="category-header">
+
+            <h2>
+                Cricket Bat
+                <span>➜</span>
+            </h2>
+
+        </div>
+
+        <div class="products-row" id="Cricketbatproducts">
+
+            <!-- Backend Products -->
+
+        </div>
+
+    </section>
+
+    <!-- Cricket Gloves -->
+
+    <section class="category-section" id="Cricketgloves">
+
+        <div class="category-header">
+
+            <h2>
+
+                Cricket Gloves
+
+                <span>➜</span>
+
+            </h2>
+
+        </div>
+
+        <div class="products-row" id="Cricketglovesproducts">
+
+        </div>
+
+    </section>
+
+    <!-- Batting Pad -->
+
+    <section class="category-section" id="Battingpad">
+
+        <div class="category-header">
+
+            <h2>
+
+                Batting Pad
+
+                <span>➜</span>
+
+            </h2>
+
+        </div>
+
+        <div class="products-row" id="Battingpadproducts"></div>
+
+    </section>
+
+    <!-- WK Gloves -->
+
+    <section class="category-section" id="WKgloves">
+
+        <div class="category-header">
+
+            <h2>
+
+                WK Gloves
+
+                <span>➜</span>
+
+            </h2>
+
+        </div>
+
+        <div class="products-row" id="WKglovesproducts"></div>
+
+    </section>
+
+    <!-- WK Pad -->
+
+    <section class="category-section" id="WKpad">
+
+        <div class="category-header">
+
+            <h2>
+
+                WK Pad
+
+                <span>➜</span>
+
+            </h2>
+
+        </div>
+
+        <div class="products-row" id="WKpadproducts"></div>
+
+    </section>
+
+    <!-- Helmet -->
+
+    <section class="category-section" id="Helmet">
+
+        <div class="category-header">
+
+            <h2>
+
+                Helmet
+
+                <span>➜</span>
+
+            </h2>
+
+        </div>
+
+        <div class="products-row" id="HelmetProducts"></div>
+
+    </section>
+
+    <!-- Kit Bag -->
+
+    <section class="category-section" id="KitBag">
+
+        <div class="category-header">
+
+            <h2>
+
+                Kit Bag
+
+                <span>➜</span>
+
+            </h2>
+
+        </div>
+
+        <div class="products-row" id="KitBagProducts"></div>
+
+    </section>
+
+    <!-- Tennis Bat -->
+
+    <section class="category-section" id="TennisBat">
+
+        <div class="category-header">
+
+            <h2>
+
+                Tennis Bat
+
+                <span>➜</span>
+
+            </h2>
+
+        </div>
+
+        <div class="products-row" id="TennisBatProducts"></div>
+
+    </section>
+
+    <!-- Abdo Guard -->
+
+    <section class="category-section" id="AbdoGuard">
+
+        <div class="category-header">
+
+            <h2>
+
+                Abdo Guard
+
+                <span>➜</span>
+
+            </h2>
+
+        </div>
+
+        <div class="products-row" id="AbdoGuardProducts"></div>
+
+    </section>
+
+    <!-- Thigh Guard -->
+
+    <section class="category-section" id="Thighguard">
+
+        <div class="category-header">
+
+            <h2>
+
+                Thigh Guard
+
+                <span>➜</span>
+
+            </h2>
+
+        </div>
+
+        <div class="products-row" id="ThighGuardProducts"></div>
+
+    </section>
+
+    <!-- Elbow Guard -->
+
+    <section class="category-section" id="ElbowGuard">
+
+        <div class="category-header">
+
+            <h2>
+
+                Elbow Guard
+
+                <span>➜</span>
+
+            </h2>
+
+        </div>
+
+        <div class="products-row" id="ElbowGuardProducts"></div>
+
+    </section>
+
+    <!-- Batting Inner -->
+
+    <section class="category-section" id="BattingInner">
+
+        <div class="category-header">
+
+            <h2>
+
+                Batting Inner
+
+                <span>➜</span>
+
+            </h2>
+
+        </div>
+
+        <div class="products-row" id="BattingInnerProducts"></div>
+
+    </section>
+
+    <!-- WK Inner -->
+
+    <section class="category-section" id="WKInner">
+
+        <div class="category-header">
+
+            <h2>
+
+                WK Inner
+
+                <span>➜</span>
+
+            </h2>
+
+        </div>
+
+        <div class="products-row" id="WKInnerProducts"></div>
+
+    </section>
+      <section class="category-section" id="tshirt">
+
+        <div class="category-header">
+
+            <h2>
+
+                T-Shirt
+
+                <span>➜</span>
+
+            </h2>
+
+        </div>
+
+        <div class="products-row" id="tshirt"></div>
+
+      </section>
+
+</section>
+
+<!-- =======================
+      SIZE POPUP
+======================= -->
+
+<div id="sizeModal">
+
+</div>
+
+    <!-- Cart -->
+    <div id="cartModal">
+
+    </div>
+
+    <!-- Product Modal -->
+    <div id="productModal">
+
+    </div>
+
+    <!-- Admin Login -->
+    <div id="adminLoginModal">
+
+    </div>
+
+    <!-- Admin Panel -->
+    <div id="adminPanel">
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+<!-- ================= INFO BOXES ================= -->
+
+<section class="info-section">
+
+    <!-- Box 1 -->
+    <div class="info-box">
+        <i class="fa-solid fa-store"></i>
+        <h2>About EM Store</h2>
+
+        <h3>VALLABH SPORTS INDUSTRIES</h3>
+
+        <p><b>Contact :</b> 8865830255</p>
+
+        <p><b>Address :</b><br>
+        2/B Hanuman Puri,<br>
+        S.K. Road,<br>
+        Meerut - 250002 (U.P)</p>
+
+    </div>
+
+    <!-- Box 2 -->
+
+    <div class="info-box">
+
+        <i class="fa-solid fa-medal"></i>
+
+        <h2>Premium Products</h2>
+
+        <ul>
+
+            <li>Premium Willow Bats</li>
+
+            <li>Soft Leather Palm Gloves</li>
+
+            <li>Premium Batting Pads</li>
+
+            <li>Thigh Guard for Better Protection</li>
+
+            <li>Abdo Guard for Safety</li>
+
+            <li>Elbow Guard for Arm Protection</li>
+
+            <li>Strong Cricket Helmet</li>
+
+            <li>Large Kit Bag</li>
+
+            <li>Cricket Dresses for Players</li>
+
+        </ul>
+
+    </div>
+
+    <!-- Box 3 -->
+
+    <div class="info-box">
+
+        <i class="fa-solid fa-baseball-bat-ball"></i>
+
+        <h2>Cricket Description</h2>
+
+        <p>
+
+            Cricket is more than just a game; it is a passion that inspires millions of players across the world. Every great performance begins with quality equipment. At EM Store, we provide premium cricket gear designed for comfort, protection, durability, and peak performance so every player can play with confidence.
+
+        </p>
+
+    </div>
+
+    <!-- Box 4 -->
+
+    <div class="info-box welcome-box">
+
+        <h1>WELCOME</h1>
+
+        <h2>TO</h2>
+
+        <h1>EM STORE</h1>
+
+        <span>MEERUT</span>
+
+    </div>
+
+</section>
+      <section class="players-section">
+
+<h1 class="players-title">
+    OUR STAR PLAYERS
+</h1>
+
+<div class="players-grid">
+
+    <!-- Player 1 -->
+
+    <div class="player-card">
+
+        <img src="player1.jpg" alt="AB de Villiers">
+
+        <div class="player-content">
+
+            <h2>AB de Villiers</h2>
+
+            <p>
+                One of cricket's most innovative batters, admired worldwide
+                for his incredible 360° stroke play and fearless approach.
+                His style continues to inspire players of every generation.
+            </p>
+
+            <span>★ 360° Batting Legend</span>
+
+        </div>
+
+    </div>
+
+    <!-- Player 2 -->
+
+    <div class="player-card">
+
+        <img src="player3.jpg" alt="MS Dhoni">
+
+        <div class="player-content">
+
+            <h2>M.S. Dhoni</h2>
+
+            <p>
+                A legendary wicketkeeper and captain known for calm decision
+                making, lightning-fast stumpings and remarkable finishing
+                ability under pressure.
+            </p>
+
+            <span>★ Captain Cool</span>
+
+        </div>
+
+    </div>
+
+    <!-- Player 3 -->
+
+    <div class="player-card">
+
+        <img src="Player2.jpg" alt="Sai Sudharsan">
+
+        <div class="player-content">
+
+            <h2>Sai Sudharsan</h2>
+
+            <p>
+                A talented young batter recognized for elegant stroke play,
+                consistency and impressive performances in modern cricket.
+            </p>
+
+            <span>★ Rising Star</span>
+
+        </div>
+
+    </div>
+
+</div>
+
+      </section>
+      <div class="footer-container">
+
+    <div class="footer-logo">
+        <h1>EM STORE</h1>
+        <p>Play With Confidence.</p>
+    </div>
+
+    <div class="footer-about">
+        <h2>About EM Store</h2>
+
+        <p>
+            EM Store is a trusted destination for premium cricket equipment,
+            offering high-quality bats, gloves, pads, helmets, kit bags,
+            protective gear, cricket apparel, and accessories. Our mission
+            is to provide reliable products that help every player perform
+            with confidence, comfort, and safety on the field.
+        </p>
+    </div>
+
+    <div class="footer-contact">
+
+        <h2>Contact Information</h2>
+
+        <p><i class="fa-solid fa-building"></i> VALLABH SPORTS INDUSTRIES</p>
+
+        <p><i class="fa-solid fa-location-dot"></i>
+            2/B Hanuman Puri, S.K. Road,<br>
+            Meerut - 250002 (U.P.)
+        </p>
+
+        <p><i class="fa-solid fa-phone"></i> +91 8865830255</p>
+
+    </div>
+
+    <div class="footer-quote">
+
+        <h2>Our Promise</h2>
+
+        <p>
+            Every innings begins with confidence, and confidence begins with
+            quality equipment. At EM Store, we are committed to providing
+            cricket gear that combines performance, comfort, durability,
+            and value for every player.
+        </p>
+
+        <h3>"Play With Confidence. Play With EM Store."</h3>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 EM Store. All Rights Reserved.
+        </p>
+
+        <p>
+            Designed & Developed by <span>S.A Developers</span>
+        </p>
+
+    </div>
+
+      </div>
+      <section class="developer-box">
+
+    <div class="developer-left">
+
+        <h3>S.A Developers</h3>
+
+        <p>Website Designed & Developed with ❤️</p>
+
+    </div>
+
+    <div class="developer-right">
+
+        
+        </>
+
+        <button onclick="openDeveloperContact()">
+            Contact Developer
+        </button>
+
+    </div>
+
+      </section>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+
+</body>
+</html>
